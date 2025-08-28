@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rancho Folador - Seu Pedaço de Paraíso</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons: Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Estilo base para usar a fonte Inter */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FBF9F6; /* Um tom de branco levemente aquecido, como no design */
+            color: #333;
+        }
+        /* Efeito de gradiente no texto */
+        .gradient-text {
+            background: linear-gradient(to right, #22c55e, #15803d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- ========== HERO SECTION ========== -->
+    <header class="relative w-full h-screen min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute top-0 left-0 w-full h-full bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080/334422/FFFFFF?text=Rancho+Folador+Imagem');"></div>
+        <!-- Overlay Escuro -->
+        <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
+        
+        <!-- Conteúdo do Hero -->
+        <div class="relative z-10 p-4">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-4 drop-shadow-lg">Rancho Folador</h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8 drop-shadow-md">Seu refúgio particular às margens do Lago de Palmas. Natureza, conforto e momentos inesquecíveis esperam por você.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/5563985010009" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-transform transform hover:scale-105 shadow-lg">
+                    Verificar Disponibilidade
+                </a>
+                <a href="https://maps.app.goo.gl/zG4biJdsx9LXHt9w8" target="_blank" class="bg-white/20 backdrop-blur-sm border border-white/30 hover:bg-white/30 text-white font-bold py-3 px-8 rounded-lg text-lg transition-transform transform hover:scale-105 shadow-lg">
+                    Veja como chegar
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========== BEM-VINDO SECTION ========== -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 max-w-4xl text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Bem-vindo ao seu Pedaço de Paraíso</h2>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                    Fuja da rotina e mergulhe em uma experiência única de tranquilidade e conexão com a natureza. O Rancho Folador é o lugar perfeito para criar memórias, seja em um fim de semana relaxante com a família, uma confraternização com amigos ou um evento especial. Aqui, cada detalhe foi pensado para o seu conforto e bem-estar.
+                </p>
+            </div>
+        </section>
+
+        <!-- ========== ESTRUTURA SECTION ========== -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Nossa Estrutura Rústica e Aconchegante</h2>
+                    <p class="text-gray-600 mt-2">Tudo o que você precisa para uma estadia completa.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <!-- Feature Card -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200/50 flex flex-col items-center text-center">
+                        <i data-lucide="sun" class="w-10 h-10 text-green-600 mb-4"></i>
+                        <h3 class="font-bold text-lg text-gray-800">Energia Solar</h3>
+                        <p class="text-gray-500 mt-1">Sustentabilidade e conforto com energia limpa.</p>
+                    </div>
+                    <!-- Feature Card -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200/50 flex flex-col items-center text-center">
+                        <i data-lucide="droplet" class="w-10 h-10 text-green-600 mb-4"></i>
+                        <h3 class="font-bold text-lg text-gray-800">Água Potável</h3>
+                        <p class="text-gray-500 mt-1">Água de poço artesiano, pura e cristalina.</p>
+                    </div>
+                    <!-- Feature Card -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200/50 flex flex-col items-center text-center">
+                        <i data-lucide="waves" class="w-10 h-10 text-green-600 mb-4"></i>
+                        <h3 class="font-bold text-lg text-gray-800">Orla Privativa</h3>
+                        <p class="text-gray-500 mt-1">Acesso exclusivo ao lago para você e sua família.</p>
+                    </div>
+                    <!-- Feature Card -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200/50 flex flex-col items-center text-center">
+                        <i data-lucide="wifi" class="w-10 h-10 text-green-600 mb-4"></i>
+                        <h3 class="font-bold text-lg text-gray-800">Wi-Fi via Satélite</h3>
+                        <p class="text-gray-500 mt-1">Conectado com o mundo, em meio à natureza.</p>
+                    </div>
+                    <!-- Feature Card -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200/50 flex flex-col items-center text-center">
+                        <i data-lucide="trees" class="w-10 h-10 text-green-600 mb-4"></i>
+                        <h3 class="font-bold text-lg text-gray-800">Jardim e Área Verde</h3>
+                        <p class="text-gray-500 mt-1">Amplo espaço para relaxar e as crianças brincarem.</p>
+                    </div>
+                    <!-- Feature Card -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200/50 flex flex-col items-center text-center">
+                        <i data-lucide="grill" class="w-10 h-10 text-green-600 mb-4"></i>
+                        <h3 class="font-bold text-lg text-gray-800">Espaço Gourmet</h3>
+                        <p class="text-gray-500 mt-1">Churrasqueira e cozinha completa para suas receitas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== GALERIA SECTION ========== -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Viva a Experiência do Rancho Folador</h2>
+                    <p class="text-gray-600 mt-2">Momentos que ficam na memória.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://placehold.co/600x400/667755/FFFFFF?text=Vista+do+Lago" alt="Vista do Lago no Rancho Folador" class="w-full h-full object-cover aspect-square transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://placehold.co/600x400/667755/FFFFFF?text=Área+de+Lazer" alt="Área de Lazer" class="w-full h-full object-cover aspect-square transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://placehold.co/600x400/667755/FFFFFF?text=Pôr+do+Sol" alt="Pôr do Sol no lago" class="w-full h-full object-cover aspect-square transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://placehold.co/600x400/667755/FFFFFF?text=Casa+Aconchegante" alt="Interior da casa" class="w-full h-full object-cover aspect-square transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://placehold.co/600x400/667755/FFFFFF?text=Rede+na+Varanda" alt="Descanso na rede" class="w-full h-full object-cover aspect-square transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://placehold.co/600x400/667755/FFFFFF?text=Família+Feliz" alt="Família no rancho" class="w-full h-full object-cover aspect-square transition-transform duration-300 hover:scale-105">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== LOCALIZAÇÃO SECTION ========== -->
+        <section class="py-24 text-white" style="background: linear-gradient(to right, #22c55e, #16a34a, #15803d);">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12">A 15 Minutos do Paraíso</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+                    <div class="flex flex-col items-center">
+                        <i data-lucide="map-pin" class="w-12 h-12 mb-3"></i>
+                        <h3 class="font-bold text-xl mb-2">Fácil Acesso</h3>
+                        <p class="opacity-90">Estrada de boa qualidade, a poucos minutos da cidade.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <i data-lucide="car" class="w-12 h-12 mb-3"></i>
+                        <h3 class="font-bold text-xl mb-2">Próximo à Cidade</h3>
+                        <p class="opacity-90">Perto o suficiente para sua conveniência, longe o bastante para relaxar.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <i data-lucide="leaf" class="w-12 h-12 mb-3"></i>
+                        <h3 class="font-bold text-xl mb-2">Natureza Exuberante</h3>
+                        <p class="opacity-90">Cercado pela beleza natural do cerrado e do lago de Palmas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CTA SECTION ========== -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6 text-center max-w-3xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Vamos Tirar Essa Ideia do Papel?</h2>
+                <p class="text-gray-600 mt-4 text-lg">Sua data especial merece um lugar especial. Fale conosco e garanta sua reserva no paraíso.</p>
+                <div class="mt-8">
+                    <a href="https://wa.me/5563985010009" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-10 rounded-lg text-xl transition-transform transform hover:scale-105 shadow-lg inline-block">
+                        Fale Conosco Agora
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Rancho Folador. Todos os direitos reservados.</p>
+            <p class="text-sm text-gray-400 mt-2">Um refúgio no coração do Brasil.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script para renderizar os ícones do Lucide
+        lucide.createIcons();
+    </script>
+</body>
+</html>
