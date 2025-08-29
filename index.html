@@ -3,167 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rancho Folador - Aluguel de Chácara</title>
+    <title>Rancho Folador - Seu Pedaço de Paraíso</title>
     
+    <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-
+    
+    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
 
     <style>
-        /* Define a fonte Poppins como padrão */
+        /* Estilo base para usar a fonte Inter */
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #FDFBF8; /* Cor de fundo principal baseada na imagem */
-        }
-        /* Imagem de fundo do Hero Section */
-        .hero-bg {
-            background-image: url('https://images.unsplash.com/photo-1589325514753-0c671b33add4?q=80&w=2070&auto=format&fit=crop');
-        }
-        /* Gradiente de fundo para a seção de localização */
-        .gradient-bg {
-            background: linear-gradient(to right, #6a994e, #a7c957);
+            font-family: 'Inter', sans-serif;
+            background-color: #FBF9F6; /* Um tom de branco levemente aquecido */
+            color: #333;
         }
     </style>
 </head>
-<body class="bg-stone-50 text-gray-800">
+<body class="antialiased">
 
-    <header class="relative flex items-center justify-center h-screen bg-cover bg-center hero-bg">
-        <div class="absolute inset-0 bg-black opacity-50"></div>
+    <!-- ========== HERO SECTION ========== -->
+    <header class="relative w-full h-screen min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute top-0 left-0 w-full h-full bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080/334422/FFFFFF?text=Rancho+Folador+Imagem');"></div>
+        <!-- Overlay Escuro -->
+        <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
         
-        <div class="relative z-10 text-center text-white px-4">
-            <h1 class="text-4xl md:text-6xl font-bold mb-4">Rancho Folador</h1>
-            <p class="text-lg md:text-xl mb-8">Um refúgio de paz e lazer em meio à natureza.</p>
-            
-            <div class="flex flex-col items-center gap-4">
-                <a href="#estrutura" class="bg-cyan-600 hover:bg-cyan-700 text-white font-semibold py-3 px-8 rounded-lg transition-transform transform hover:scale-105 w-64 text-center">
-                    Conhecer a Estrutura
+        <!-- Conteúdo do Hero -->
+        <div class="relative z-10 p-4">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-4 drop-shadow-lg">Rancho Folador</h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8 drop-shadow-md">Seu refúgio particular às margens do Lago de Palmas. Natureza, conforto e momentos inesquecíveis esperam por você.</p>
+            <!-- BOTÕES ATUALIZADOS -->
+            <div class="flex flex-col gap-4 items-center">
+                <a href="https://wa.me/5563985010009" target="_blank" class="w-full max-w-xs bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-transform transform hover:scale-105 shadow-lg">
+                    Verificar Disponibilidade
                 </a>
-                <a href="https://wa.me/5563985010009" target="_blank" class="border-2 border-white hover:bg-white hover:text-cyan-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors w-64 text-center">
-                    Fale Conosco
+                <a href="https://maps.app.goo.gl/zG4biJdsx9LXHt9w8" target="_blank" class="w-full max-w-xs bg-white/20 backdrop-blur-sm border border-white/30 hover:bg-white/30 text-white font-bold py-3 px-8 rounded-lg text-lg transition-transform transform hover:scale-105 shadow-lg">
+                    Veja como chegar
                 </a>
             </div>
         </div>
     </header>
 
     <main>
-        <section id="estrutura" class="py-16 md:py-24 bg-[#F8F5F2]">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-2">Nossa Estrutura Rústica e Aconchegante</h2>
-                <p class="text-gray-600 mb-12">Tudo o que você precisa para uma estadia inesquecível.</p>
+        <!-- ========== ESTRUTURA SECTION (ATUALIZADA) ========== -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Nossa Estrutura</h2>
+                    <p class="text-gray-600 mt-2">Tudo o que você precisa para uma estadia completa.</p>
+                </div>
                 
-                <div class="grid grid-cols-3 gap-4 md:grid-cols-3 lg:grid-cols-5 md:gap-8 max-w-4xl mx-auto">
-                    <div class="bg-white p-4 rounded-xl shadow-md flex flex-col items-center justify-center aspect-square">
-                        <i class="ri-lightbulb-flash-line text-3xl md:text-4xl text-cyan-600 mb-2"></i>
-                        <h3 class="text-sm md:text-base font-semibold text-center">Energia Elétrica</h3>
+                <!-- GRID COM OS NOVOS ITENS -->
+                <div class="grid grid-cols-3 gap-4 md:gap-8 max-w-4xl mx-auto text-center">
+                    <!-- Feature Card Simplificada -->
+                    <div class="bg-white p-4 rounded-xl shadow-md border border-gray-200/50">
+                        <span class="text-3xl">⚡️</span>
+                        <h3 class="font-bold text-sm md:text-lg text-gray-800 mt-2">Energia</h3>
                     </div>
-                    <div class="bg-white p-4 rounded-xl shadow-md flex flex-col items-center justify-center aspect-square">
-                        <i class="ri-drop-line text-3xl md:text-4xl text-cyan-600 mb-2"></i>
-                        <h3 class="text-sm md:text-base font-semibold text-center">Água Encanada</h3>
+                    <!-- Feature Card Simplificada -->
+                    <div class="bg-white p-4 rounded-xl shadow-md border border-gray-200/50">
+                        <span class="text-3xl">🚰</span>
+                        <h3 class="font-bold text-sm md:text-lg text-gray-800 mt-2">Água Encanada</h3>
                     </div>
-                    <div class="bg-white p-4 rounded-xl shadow-md flex flex-col items-center justify-center aspect-square">
-                        <i class="ri-grill-line text-3xl md:text-4xl text-cyan-600 mb-2"></i>
-                        <h3 class="text-sm md:text-base font-semibold text-center">Churrasqueira</h3>
+                    <!-- Feature Card Simplificada -->
+                    <div class="bg-white p-4 rounded-xl shadow-md border border-gray-200/50">
+                        <span class="text-3xl">🍖</span>
+                        <h3 class="font-bold text-sm md:text-lg text-gray-800 mt-2">Churrasqueira</h3>
                     </div>
-                    <div class="bg-white p-4 rounded-xl shadow-md flex flex-col items-center justify-center aspect-square">
-                        <i class="ri-water-flash-line text-3xl md:text-4xl text-cyan-600 mb-2"></i>
-                        <h3 class="text-sm md:text-base font-semibold text-center">Piscina</h3>
+                    <!-- Feature Card Simplificada -->
+                    <div class="bg-white p-4 rounded-xl shadow-md border border-gray-200/50">
+                        <span class="text-3xl">🔥</span>
+                        <h3 class="font-bold text-sm md:text-lg text-gray-800 mt-2">Fogão a Lenha</h3>
                     </div>
-                    <div class="bg-white p-4 rounded-xl shadow-md flex flex-col items-center justify-center aspect-square">
-                        <i class="ri-wave-line text-3xl md:text-4xl text-cyan-600 mb-2"></i>
-                        <h3 class="text-sm md:text-base font-semibold text-center">Rio Particular</h3>
+                    <!-- Feature Card Simplificada -->
+                    <div class="bg-white p-4 rounded-xl shadow-md border border-gray-200/50">
+                        <span class="text-3xl">🧊</span>
+                        <h3 class="font-bold text-sm md:text-lg text-gray-800 mt-2">Geladeira</h3>
                     </div>
-                    <div class="bg-white p-4 rounded-xl shadow-md flex flex-col items-center justify-center aspect-square">
-                        <i class="ri-tent-line text-3xl md:text-4xl text-cyan-600 mb-2"></i>
-                        <h3 class="text-sm md:text-base font-semibold text-center">Área de Camping</h3>
+                    <!-- Feature Card Simplificada -->
+                    <div class="bg-white p-4 rounded-xl shadow-md border border-gray-200/50">
+                        <span class="text-3xl">🚽</span>
+                        <h3 class="font-bold text-sm md:text-lg text-gray-800 mt-2">Banheiro</h3>
                     </div>
-                     <div class="bg-white p-4 rounded-xl shadow-md flex flex-col items-center justify-center aspect-square">
-                        <i class="ri-wifi-line text-3xl md:text-4xl text-cyan-600 mb-2"></i>
-                        <h3 class="text-sm md:text-base font-semibold text-center">Wi-Fi</h3>
+                     <!-- Feature Card Simplificada -->
+                    <div class="bg-white p-4 rounded-xl shadow-md border border-gray-200/50">
+                        <span class="text-3xl">🚿</span>
+                        <h3 class="font-bold text-sm md:text-lg text-gray-800 mt-2">Ducha</h3>
                     </div>
-                    <div class="bg-white p-4 rounded-xl shadow-md flex flex-col items-center justify-center aspect-square">
-                        <i class="ri-sun-line text-3xl md:text-4xl text-cyan-600 mb-2"></i>
-                        <h3 class="text-sm md:text-base font-semibold text-center">Amplo Deck</h3>
+                    <!-- Feature Card Simplificada -->
+                    <div class="bg-white p-4 rounded-xl shadow-md border border-gray-200/50">
+                        <span class="text-3xl">🌊</span>
+                        <h3 class="font-bold text-sm md:text-lg text-gray-800 mt-2">Acesso ao Lago</h3>
                     </div>
-                    <div class="bg-white p-4 rounded-xl shadow-md flex flex-col items-center justify-center aspect-square">
-                        <i class="ri-roadster-line text-3xl md:text-4xl text-cyan-600 mb-2"></i>
-                        <h3 class="text-sm md:text-base font-semibold text-center">Garagem Segura</h3>
+                    <!-- Feature Card Simplificada -->
+                    <div class="bg-white p-4 rounded-xl shadow-md border border-gray-200/50">
+                        <span class="text-3xl">🪑</span>
+                        <h3 class="font-bold text-sm md:text-lg text-gray-800 mt-2">Mesa e Cadeiras</h3>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- ========== GALERIA SECTION ========== -->
         <section class="py-16 md:py-24 bg-white">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-2">Viva a Experiência do Rancho Folador</h2>
-                <p class="text-gray-600 mb-12">Momentos que ficam na memória.</p>
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Viva a Experiência do Rancho Folador</h2>
+                    <p class="text-gray-600 mt-2">Momentos que ficam na memória.</p>
+                </div>
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
                     <div class="overflow-hidden rounded-lg shadow-lg">
-                        <img src="https://images.unsplash.com/photo-1570793005399-6b35de6bacb9?q=80&w=1974&auto=format&fit=crop" alt="Vista do rio no rancho" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/667755/FFFFFF?text=Vista+do+Lago" alt="Vista do Lago no Rancho Folador" class="w-full h-full object-cover aspect-square transition-transform duration-300 hover:scale-105">
                     </div>
                     <div class="overflow-hidden rounded-lg shadow-lg">
-                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" alt="Área de lazer da chácara" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300">
-                    </div>
-                     <div class="overflow-hidden rounded-lg shadow-lg">
-                        <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=2070&auto=format&fit=crop" alt="Interior da casa" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300">
-                    </div>
-                     <div class="overflow-hidden rounded-lg shadow-lg">
-                        <img src="https://images.unsplash.com/photo-1599691883386-3091176b5c3e?q=80&w=1974&auto=format&fit=crop" alt="Piscina da chácara" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/667755/FFFFFF?text=Área+de+Lazer" alt="Área de Lazer" class="w-full h-full object-cover aspect-square transition-transform duration-300 hover:scale-105">
                     </div>
                     <div class="overflow-hidden rounded-lg shadow-lg">
-                        <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?q=80&w=1965&auto=format&fit=crop" alt="Chácara vista de fora" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/667755/FFFFFF?text=Pôr+do+Sol" alt="Pôr do Sol no lago" class="w-full h-full object-cover aspect-square transition-transform duration-300 hover:scale-105">
                     </div>
                     <div class="overflow-hidden rounded-lg shadow-lg">
-                        <img src="https://images.unsplash.com/photo-1622359981358-0050e6433e38?q=80&w=1974&auto=format&fit=crop" alt="Pessoas relaxando na rede" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/667755/FFFFFF?text=Casa+Aconchegante" alt="Interior da casa" class="w-full h-full object-cover aspect-square transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://placehold.co/600x400/667755/FFFFFF?text=Rede+na+Varanda" alt="Descanso na rede" class="w-full h-full object-cover aspect-square transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://placehold.co/600x400/667755/FFFFFF?text=Família+Feliz" alt="Família no rancho" class="w-full h-full object-cover aspect-square transition-transform duration-300 hover:scale-105">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-16 md:py-24 text-white gradient-bg">
+        <!-- ========== LOCALIZAÇÃO & CTA SECTION (ATUALIZADA) ========== -->
+        <section class="py-24 text-white" style="background: linear-gradient(to right, #22c55e, #16a34a, #15803d);">
             <div class="container mx-auto px-6 text-center">
-                 <h2 class="text-3xl md:text-4xl font-bold mb-2">A 15 Minutos do Paraíso</h2>
-                 <p class="mb-10">Localização privilegiada com acesso fácil e rápido.</p>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-4xl mx-auto">
-                    <div class="flex flex-col items-center">
-                        <i class="ri-map-pin-line text-4xl mb-2"></i>
-                        <h3 class="font-bold text-lg">Localização Exata</h3>
-                        <p class="text-sm">Próximo a Palmas-TO</p>
-                    </div>
-                     <div class="flex flex-col items-center">
-                        <i class="ri-road-map-line text-4xl mb-2"></i>
-                        <h3 class="font-bold text-lg">Acesso Facilitado</h3>
-                        <p class="text-sm">Estrada em ótimas condições</p>
-                    </div>
-                     <div class="flex flex-col items-center">
-                        <i class="ri-timer-line text-4xl mb-2"></i>
-                        <h3 class="font-bold text-lg">Rápido de Chegar</h3>
-                        <p class="text-sm">Apenas 15 min do centro</p>
-                    </div>
-                </div>
-
-                <div class="flex flex-col md:flex-row items-center justify-center gap-4">
-                    <a href="https://maps.google.com/?q=-10.168,-48.331" target="_blank" class="border-2 border-white hover:bg-white hover:text-green-800 text-white font-semibold py-3 px-8 rounded-lg transition-colors w-full md:w-auto">
-                        Ver no Mapa
+                <h2 class="text-3xl md:text-4xl font-bold">A 15 Minutos do Paraíso</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-lg opacity-90">Venha desfrutar de momentos únicos em um lugar de fácil acesso, pertinho da cidade mas com toda a tranquilidade que você merece.</p>
+                <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+                     <a href="https://wa.me/5563985010009" target="_blank" class="bg-white text-green-700 hover:bg-gray-200 font-bold py-3 px-8 rounded-lg text-lg transition-transform transform hover:scale-105 shadow-lg">
+                        Verificar Disponibilidade
                     </a>
-                    <a href="https://wa.me/5563985010009" target="_blank" class="bg-white text-green-800 font-bold py-4 px-8 rounded-lg transition-transform transform hover:scale-105 w-full md:w-auto shadow-lg">
-                        Reservar Agora pelo WhatsApp
+                    <a href="https://maps.app.goo.gl/zG4biJdsx9LXHt9w8" target="_blank" class="bg-white/20 backdrop-blur-sm border border-white/30 hover:bg-white/30 text-white font-bold py-3 px-8 rounded-lg text-lg transition-transform transform hover:scale-105 shadow-lg">
+                        Veja como chegar
                     </a>
                 </div>
             </div>
         </section>
-
     </main>
-    
-    <footer class="bg-gray-800 text-white py-6">
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-6 text-center">
             <p>&copy; 2025 Rancho Folador. Todos os direitos reservados.</p>
+            <p class="text-sm text-gray-400 mt-2">Um refúgio no coração do Brasil.</p>
         </div>
     </footer>
 
 </body>
 </html>
+
